@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Science from "public/science.svg";
 
 export default function Home() {
@@ -11,11 +12,14 @@ export default function Home() {
         </h2>
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
-        <div className="flex flex-col items-center justify-center bg-[#20486A] text-center rounded-md p-4">
-          <Science className="w-20 h-20" />
-          Science
-        </div>
+      <div className="grid grid-cols-2 gap-4 m-auto w-full">
+        <Link href="/quiz?category=Science">
+          <div className="flex flex-col items-center justify-center bg-[#20486A] text-center rounded-md p-4">
+            <Science className="w-20 h-20" />
+            Science
+          </div>
+        </Link>
+
         <div className="flex flex-col items-center justify-center bg-[#20486A] text-center rounded-md p-4">
           <Science className="w-20 h-20" />
           Science
