@@ -25,7 +25,7 @@ Here are some exciting features that I plan to add to the Trivia Quiz in the fut
 ### Installation
 To get started with the Trivia Quiz Game, simply clone the repository to your local machine and install the dependencies using npm or yarn:
 ```bash
-git clone [https://github.com/Prokopetz/trivia-quiz-app.git
+git clone https://github.com/Prokopetz/trivia-quiz-app.git
 cd trivia-quiz-game
 npm install
 ```
