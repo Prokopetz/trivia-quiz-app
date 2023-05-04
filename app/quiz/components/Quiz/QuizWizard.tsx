@@ -79,11 +79,11 @@ const QuizWizard = ({ questions }: { questions: Question[] }) => {
   );
 
   const getSummaryTitle = () => {
-    if (score < 3) {
+    if (score <= 3) {
       return "It wasn't this time 😕";
     }
 
-    if (score > 7) {
+    if (score >= 8) {
       return "You got it! 🎉";
     }
 

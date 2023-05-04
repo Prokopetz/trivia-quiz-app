@@ -1,15 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M10.5 7.5L12.5 10.5L10.5 13.5H7.5L5.5 10.5L7.5 7.5H10.5Z" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M15.5 4.5L17.5 7.5L15.5 10.5H12.5L10.5 7.5L12.5 4.5H15.5Z" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M15.5 16.5L17.5 19.5" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M5.5 4.5L7.5 7.5" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M12.5 16.5L11.5 18" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M7.5 13.5L6.5 15" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M5.5 10.5H4.5" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M17.5 13.5H20.5" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M15.5 10.5L17.5 13.5L15.5 16.5H12.5L10.5 13.5L12.5 10.5H15.5Z" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="10.5" cy="19.5" r="0.5" fill="#FFFFFF"/>
-<circle cx="5.5" cy="16.5" r="0.5" fill="#FFFFFF"/>
-<circle cx="2.5" cy="10.5" r="0.5" fill="#FFFFFF"/>
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512" xml:space="preserve">
+<path style="fill:#E4F4F9;" d="M335.448,247.172V52.966H176.552v194.207l-75.034,109.462
+	c-14.124,20.303-20.303,45.903-16.772,70.621C91.807,475.807,134.179,512,183.614,512h145.655c49.434,0,90.924-36.193,97.986-85.628
+	c3.531-24.717-2.648-49.434-16.772-70.621L335.448,247.172z"/>
+<path style="fill:#B0D3F0;" d="M335.448,52.966H176.552c-15.007,0-26.483-11.476-26.483-26.483S161.545,0,176.552,0h158.897
+	c15.007,0,26.483,11.476,26.483,26.483S350.455,52.966,335.448,52.966"/>
+<g>
+	<path style="fill:#90BAE1;" d="M247.172,114.759h-35.31c-5.297,0-8.828-3.531-8.828-8.828c0-5.297,3.531-8.828,8.828-8.828h35.31
+		c5.297,0,8.828,3.531,8.828,8.828C256,111.228,252.469,114.759,247.172,114.759z"/>
+	<path style="fill:#90BAE1;" d="M229.517,150.069h-17.655c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h17.655
+		c5.297,0,8.828,3.531,8.828,8.828S234.814,150.069,229.517,150.069z"/>
+	<path style="fill:#90BAE1;" d="M247.172,185.379h-35.31c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h35.31
+		c5.297,0,8.828,3.531,8.828,8.828S252.469,185.379,247.172,185.379z"/>
+	<path style="fill:#90BAE1;" d="M229.517,220.69h-17.655c-5.297,0-8.828-3.531-8.828-8.828c0-5.297,3.531-8.828,8.828-8.828h17.655
+		c5.297,0,8.828,3.531,8.828,8.828C238.345,217.159,234.814,220.69,229.517,220.69z"/>
+</g>
+<path style="fill:#B0D3F0;" d="M427.255,426.372c0.883-3.531,0.883-7.062,0.883-10.593c-10.593-4.414-21.186-10.593-30.897-18.538
+	c-37.959-37.959-92.69-62.676-132.414-26.483l0,0c-39.724,36.193-94.455,11.476-132.414-26.483
+	c-4.414-4.414-9.71-7.945-15.007-10.593l-15.89,22.952c-14.124,20.303-20.303,45.903-16.772,70.621
+	C91.807,475.807,134.179,512,183.614,512h145.655C377.821,512,420.193,475.807,427.255,426.372"/>
 </svg>

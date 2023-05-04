@@ -1,10 +1,11 @@
 "use client";
-import getQuestions, { Category } from "@/app/hooks/getQuestions";
+import getQuestions from "@/app/hooks/getQuestions";
 import { motion } from "framer-motion";
 import QuizWizard from "./QuizWizard";
+import { Category } from "@/app/page";
 
-const Quiz = async () => {
-  const questions = await getQuestions({ category: Category.Science });
+const Quiz = async ({ category }: { category: Category }) => {
+  const questions = await getQuestions({ category });
 
   return (
     <motion.div

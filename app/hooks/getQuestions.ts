@@ -1,15 +1,11 @@
 import { shuffle, unescape } from "lodash";
+import { Category } from "../page";
 
 export interface Question {
   category: string;
   question: string;
   answers: string[];
   correctAnswer: string;
-}
-
-export enum Category {
-  "Science" = 17,
-  "Comics" = 29,
 }
 
 const API_URL = "https://opentdb.com/api.php";
