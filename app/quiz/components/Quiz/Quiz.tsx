@@ -2,7 +2,7 @@
 import getQuestions from "@/app/hooks/getQuestions";
 import { motion } from "framer-motion";
 import QuizWizard from "./QuizWizard";
-import { Category } from "@/app/page";
+import { Category } from "@/app/types/Category";
 
 const Quiz = async ({ category }: { category: Category }) => {
   const questions = await getQuestions({ category });

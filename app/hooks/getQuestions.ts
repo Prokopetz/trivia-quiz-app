@@ -1,5 +1,5 @@
 import { shuffle, unescape } from "lodash";
-import { Category } from "../page";
+import { Category } from "../types/Category";
 
 export interface Question {
   category: string;

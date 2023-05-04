@@ -4,8 +4,8 @@ import Link from "next/link";
 import { Suspense } from "react";
 import QuizComponent from "./components/Quiz/Quiz";
 import { PageProps } from "@/.next/types/app/page";
-import { Category } from "../page";
 import Spin from "public/spin.svg";
+import { Category } from "../types/Category";
 
 const Quiz = ({ searchParams }: PageProps) => {
   return (

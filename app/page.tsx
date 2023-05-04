@@ -6,15 +6,7 @@ import Sports from "public/sports.svg";
 import Mythology from "public/mythology.svg";
 import History from "public/history.svg";
 import { createElement } from "react";
-
-export enum Category {
-  "Science" = 17,
-  "Comics" = 29,
-  "Television" = 14,
-  "Sports" = 21,
-  "Mythology" = 20,
-  "History" = 23,
-}
+import { Category } from "./types/Category";
 
 const categories = {
   [Category.Science]: {
