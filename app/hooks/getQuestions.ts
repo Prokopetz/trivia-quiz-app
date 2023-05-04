@@ -18,7 +18,7 @@ const cleanString = (str: string) => {
 };
 
 const getQuestions = ({ category }: { category: Category }) => {
-  const promise = fetch(`${API_URL}?amount=10&category=${category}`)
+  const promise = fetch(`${API_URL}?amount=10&type=multiple&difficulty=medium&category=${category}`)
     .then((res) => res.json())
     .then((res) =>
       res.results.map(
