@@ -1,6 +1,4 @@
 import { shuffle, unescape } from "lodash";
-import { useEffect, useState } from "react";
-import wrapPromise from "../utils/wrapPromise";
 
 export interface Question {
   category: string;
@@ -19,7 +17,8 @@ const API_URL = "https://opentdb.com/api.php";
 const cleanString = (str: string) => {
   return unescape(str)
     .replaceAll(/&quot;/g, '"')
-    .replaceAll(/&#039;/g, "'");
+    .replaceAll(/&#039;/g, "'")
+    .replaceAll(/&rsquo;/g, "'");
 };
 
 const getQuestions = ({ category }: { category: Category }) => {
