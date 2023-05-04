@@ -3,11 +3,9 @@ import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { Suspense } from "react";
 import QuizComponent from "./components/Quiz/Quiz";
-import { PageProps } from "@/.next/types/app/page";
-import Spin from "public/spin.svg";
-import { Category } from "../types/Category";
+import { Category } from "@/app/types/Category";
 
-const Quiz = ({ searchParams }: PageProps) => {
+const Quiz = ({ searchParams }: { searchParams: { category: number } }) => {
   return (
     <div className="bg-[#252B49] h-screen w-screen">
       <div className="flex flex-col justify-end bg-[#252B49] w-screen h-screen font-semibold text-white select-none m-auto md:max-w-lg">
