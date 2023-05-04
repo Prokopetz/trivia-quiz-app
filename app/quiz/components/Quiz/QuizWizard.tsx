@@ -1,6 +1,8 @@
 import { Question } from "@/app/hooks/getQuestions";
 import clsx from "clsx";
+import Link from "next/link";
 import { useReducer } from "react";
+import Trophy from "public/trophy.svg";
 
 const initialState = {
   currentQuestion: 0,
@@ -20,6 +22,9 @@ const QuizWizard = ({ questions }: { questions: Question[] }) => {
 
   const Answer = () => (
     <>
+      <h3 className="text-[#9097b5d8] text-lg mb-2">
+        Question {currentQuestion + 1} of 10
+      </h3>
       <span className="border w-full border-dashed mb-4" />
       <h2 className="text-black text-2xl font-semibold whitespace-pre-wrap break-words">
         {questions[currentQuestion]?.question}
@@ -40,15 +45,14 @@ const QuizWizard = ({ questions }: { questions: Question[] }) => {
               }
 
               const nextQuestion = currentQuestion + 1;
-              if (nextQuestion < questions.length) {
-                setTimeout(() => {
-                  setState({
-                    currentQuestion: nextQuestion,
-                    answered: false,
-                    selectedAnswer: "",
-                  });
-                }, 1000); // Wait for 1 second before moving to the next question
-              }
+
+              setTimeout(() => {
+                setState({
+                  currentQuestion: nextQuestion,
+                  answered: false,
+                  selectedAnswer: "",
+                });
+              }, 1000); // Wait for 1 second before moving to the next question
             }}
             key={answer}
             className={clsx(
@@ -74,13 +78,42 @@ const QuizWizard = ({ questions }: { questions: Question[] }) => {
     </>
   );
 
+  const getSummaryTitle = () => {
+    if (score < 3) {
+      return "It wasn't this time 😕";
+    }
+
+    if (score > 7) {
+      return "You got it! 🎉";
+    }
+
+    return "Try again!";
+  };
+
+  const Summary = () => {
+    return (
+      <div className="flex flex-col items-center gap-8">
+        <h2 className="text-[#252B49] text-2xl font-semibold whitespace-pre-wrap break-words">
+          {getSummaryTitle()}
+        </h2>
+        <Trophy className="w-24 h-24 stroke-white text-white" />
+        <h3 className="text-black text-xl font-medium whitespace-pre-wrap break-words">
+          You scored {score} out of 10
+        </h3>
+        <Link
+          href={"/"}
+          className="p-3 w-1/2 text-center border rounded-2xl bg-[#346899]"
+        >
+          Done
+        </Link>
+      </div>
+    );
+  };
+
   return (
     <>
       <div className="flex flex-col">
-        <h3 className="text-[#9097b5d8] text-lg mb-2">
-          Question {currentQuestion + 1} of 10
-        </h3>
-        <Answer />
+        {currentQuestion === questions.length ? <Summary /> : <Answer />}
       </div>
     </>
   );
