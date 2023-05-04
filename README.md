@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Trivia Quiz
 
-## Getting Started
+Welcome to the Next.js Trivia Quiz Game! This is a fun and interactive quiz game built with Next.js that utilizes the Open Trivia DB API to provide a variety of trivia questions to users.
 
-First, run the development server:
+You can try for yourself [here](https://trivia-quiz-app-chi.vercel.app/)
+
+### Features
+- A variety of trivia questions across multiple categories
+- Intuitive user interface with simple design
+- Easy setup and configuration using Next.js
+
+### Roadmap
+Here are some exciting features that I plan to add to the Trivia Quiz in the future:
+
+- **Difficulty selection**: Enable users select their preferred difficulty level for the trivia questions.
+- **User authentication**: Allow users to create accounts and login to the game. Users will be able to save their scores and track their progress over time.
+- **Additional categories**: Open Trivia DB API has a wide range of categories for trivia questions, and I plan to add support for more of them.
+- **Improved UI/UX**: Make tweaks to the UI/UX, based on user feedback, to make the game even more enjoyable and engaging.
+
+### Technologies
+- Next.js
+- TailwindCSS
+- Typescript
+
+### Installation
+To get started with the Trivia Quiz Game, simply clone the repository to your local machine and install the dependencies using npm or yarn:
+```bash
+git clone https://github.com/Prokopetz/trivia-quiz-app.git
+cd trivia-quiz-game
+npm install
+```
+### Usage
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will start the development server on http://localhost:3000, where you can access the trivia quiz game and start playing!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello) is an endpoint that uses [Route Handlers](https://beta.nextjs.org/docs/routing/route-handlers). This endpoint can be edited in `app/api/hello/route.ts`.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
