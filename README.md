@@ -1,8 +1,13 @@
 # Trivia Quiz
 
-Welcome to the Next.js Trivia Quiz Game! This is a fun and interactive quiz game built with Next.js that utilizes the Open Trivia DB API to provide a variety of trivia questions to users.
+Welcome to the Trivia Quiz Game! This is a fun and interactive quiz game built with Next.js that utilizes the Open Trivia DB API to provide a variety of trivia questions to users.
 
 You can try for yourself [here](https://trivia-quiz-app-chi.vercel.app/)
+
+### What I learned
+During the development of the of this project, I had the opportunity to learn new concepts and technologies. One of the most interesting things that I learned was how to use React Suspense to manage asynchronous data loading.
+
+In addition, I also learned how to create server and client components using the latest version of Next.js (v13.4).
 
 ### Features
 - A variety of trivia questions across multiple categories
@@ -21,6 +26,8 @@ Here are some exciting features that I plan to add to the Trivia Quiz in the fut
 - Next.js
 - TailwindCSS
 - Typescript
+- React Suspense
+- Client and Server Components
 
 ### Installation
 To get started with the Trivia Quiz Game, simply clone the repository to your local machine and install the dependencies using npm or yarn:
