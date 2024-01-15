@@ -21,7 +21,7 @@ const getQuestions = ({ category }: { category: Category }) => {
   const promise = fetch(`${API_URL}?amount=10&type=multiple&difficulty=easy&category=${category}`)
     .then((res) => res.json())
     .then((res) =>
-      res.results.map(
+      res?.results?.map(
         (question: {
           incorrect_answers: string[];
           question: string;
