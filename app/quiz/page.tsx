@@ -4,8 +4,12 @@ import Link from "next/link";
 import { Suspense } from "react";
 import QuizComponent from "./components/Quiz/Quiz";
 import { Category } from "@/app/types/Category";
+import createResource from "../utils/createResource";
+import getQuestions from "../hooks/getQuestions";
 
 const Quiz = ({ searchParams }: { searchParams: { category: number } }) => {
+  const resource = createResource(getQuestions({ category: searchParams.category }));
+  
   return (
     <div className="bg-[#252B49] h-screen w-screen">
       <div className="flex flex-col justify-end bg-[#252B49] w-screen h-screen font-semibold text-white select-none m-auto md:max-w-lg">
@@ -26,7 +30,7 @@ const Quiz = ({ searchParams }: { searchParams: { category: number } }) => {
           }
         >
           {/* @ts-expect-error Server Component */}
-          <QuizComponent category={searchParams.category} />
+          <QuizComponent categoryResource={resource} />
         </Suspense>
       </div>
     </div>

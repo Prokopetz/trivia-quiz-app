@@ -3,9 +3,10 @@ import getQuestions from "@/app/hooks/getQuestions";
 import { motion } from "framer-motion";
 import QuizWizard from "./QuizWizard";
 import { Category } from "@/app/types/Category";
+import createResource from "@/app/utils/createResource";
 
-const Quiz = async ({ category }: { category: Category }) => {
-  const questions = await getQuestions({ category });
+const Quiz = ({ categoryResource }: { categoryResource: {read: () => Category} }) => {
+  const questions = categoryResource.read();
 
   return (
     <motion.div

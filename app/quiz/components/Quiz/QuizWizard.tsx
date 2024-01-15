@@ -1,3 +1,4 @@
+"use client";
 import { Question } from "@/app/hooks/getQuestions";
 import clsx from "clsx";
 import Link from "next/link";
