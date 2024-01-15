@@ -1,11 +1,9 @@
 "use client";
-import getQuestions from "@/app/hooks/getQuestions";
+import { Question } from "@/app/hooks/getQuestions";
 import { motion } from "framer-motion";
 import QuizWizard from "./QuizWizard";
-import { Category } from "@/app/types/Category";
-import createResource from "@/app/utils/createResource";
 
-const Quiz = ({ categoryResource }: { categoryResource: {read: () => Category} }) => {
+const Quiz = ({ categoryResource }: { categoryResource: {read: () => Question[]} }) => {
   const questions = categoryResource.read();
 
   return (
